@@ -7,9 +7,8 @@ else
 endif
 
 PRODUCT_COPY_FILES += \
-    device/bq/piccolometal/kernel:kernel \
-    device/bq/piccolometal/recovery/init.recovery.qcom.rc:root/init.recovery.qcom.rc \
-    device/bq/piccolometal/recovery/sbin/healthd:root/sbin/healthd
+    bionic/libc/zoneinfo/tzdata:recovery/root/system/usr/share/zoneinfo/tzdata \
+    device/bq/piccolometal/kernel:kernel
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := piccolometal
